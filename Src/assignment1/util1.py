@@ -2,16 +2,16 @@
     a= input("Enter list elements :").split()
 '''
 
-def listoperations():
+def listoperations(N):
     # Number of operations to perform
-    N = int(input())
+
 
     # Initiating empty list
     mylist = []
     # For loop iterates to perform number of operations
     for i in range(N):
         # storing the values in variable command, converting to lower case, and splitting the values
-        command = input("Enter the number of commands").lower().split()
+        command = input().lower().split()
         # matching the command
         match (command[0]):
             # inserting the values at specified index
@@ -35,5 +35,5 @@ def listoperations():
             # Reversing the elements of list
             case 'reverse':
                 mylist.reverse()
-l1 = listoperations()
+    return mylist
 

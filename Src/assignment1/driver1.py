@@ -1,2 +1,4 @@
 import util1 as ut1
-ut1.listoperations()
+
+N = int(input("Enter the commands:"))
+ut1.listoperations(N)
