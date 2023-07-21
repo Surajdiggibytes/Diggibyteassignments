@@ -1,7 +1,7 @@
 import util17
+num_of_tests = int(input())
 
-n = int(input())
-mylist = list(input().split())
-# print(type(mylist))
-k = int(input())
-iters(mylist,k)
+for i in range(num_of_tests):
+    n = int(input())
+    sideLengths = [int(num) for num in input().split()]
+    util17.myFunction(sideLengths)
